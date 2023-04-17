@@ -1,0 +1,100 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/review/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/*
+* Style Works for both Editor and Frontend
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+.wp-block-pscb-review .wp-block-pscb-product {
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  align-items: center;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.wp-block-pscb-review .wp-block-pscb-product img {
+  max-width: 100%;
+}
+.wp-block-pscb-review .wp-block-pscb-product a {
+  transition: 0.3s;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-subtitle,
+.wp-block-pscb-review .wp-block-pscb-product .prb-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-subtitle {
+  font-size: 0.75rem;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-title {
+  line-height: 1;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-btn,
+.wp-block-pscb-review .wp-block-pscb-product .prb-cta {
+  transition: 0.3s;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-btn {
+  text-decoration: underline !important;
+  text-underline-offset: 2px;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-top: 5px;
+  display: inline-block;
+}
+.wp-block-pscb-review .wp-block-pscb-product .prb-cta {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.1;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 3px;
+  text-decoration: none !important;
+}
+.wp-block-pscb-review .prb-show-more {
+  text-align: center;
+  margin-top: 15px;
+  position: relative;
+}
+.wp-block-pscb-review .prb-show-more:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: "";
+  z-index: -1;
+}
+.wp-block-pscb-review .prb-show-more .prb-toggle-btn {
+  padding: 5px 10px;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none !important;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .wp-block-prb-review .wp-block-prb-product {
+    grid-template-columns: 1fr 3fr;
+  }
+  .wp-block-prb-review .wp-block-prb-product .prb-title {
+    font-size: 1.1rem;
+  }
+  .wp-block-prb-review .wp-block-prb-product .prb-cta {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

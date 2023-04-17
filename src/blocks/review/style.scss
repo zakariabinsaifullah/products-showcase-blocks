@@ -1,0 +1,109 @@
+/*
+* Style Works for both Editor and Frontend
+*/
+
+// smooth scroll
+html {
+	scroll-behavior: smooth;
+}
+
+.wp-block-pscb-review {
+	.wp-block-pscb-product {
+		display: grid;
+		grid-template-columns: 1fr 4fr 2fr;
+		column-gap: 15px;
+		align-items: center;
+		padding: 10px 0;
+		box-sizing: border-box;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+		img {
+			max-width: 100%;
+		}
+
+		a {
+			transition: 0.3s;
+		}
+
+		.prb-subtitle,
+		.prb-title {
+			margin: 0 !important;
+			padding: 0 !important;
+		}
+
+		.prb-subtitle {
+			font-size: 0.75rem;
+		}
+
+		.prb-title {
+			line-height: 1;
+			font-size: 1.3rem;
+			font-weight: 700;
+		}
+
+		.prb-btn,
+		.prb-cta {
+			transition: 0.3s;
+		}
+
+		.prb-btn {
+			text-decoration: underline !important;
+			text-underline-offset: 2px;
+			font-size: 1rem;
+			line-height: 1.2;
+			margin-top: 5px;
+			display: inline-block;
+		}
+
+		.prb-cta {
+			text-transform: uppercase;
+			display: block;
+			text-align: center;
+			padding: 10px;
+			line-height: 1.1;
+			font-size: 0.9rem;
+			font-weight: 700;
+			border-radius: 3px;
+			text-decoration: none !important;
+		}
+	}
+
+	.prb-show-more {
+		text-align: center;
+		margin-top: 15px;
+		position: relative;
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			content: "";
+			z-index: -1;
+		}
+		.prb-toggle-btn {
+			padding: 5px 10px;
+			line-height: 1.5;
+			font-size: 1rem;
+			font-weight: 700;
+			cursor: pointer;
+			border: none !important;
+			border-radius: 2px;
+		}
+	}
+}
+
+// mobile view
+@media (max-width: 767px) {
+	.wp-block-prb-review {
+		.wp-block-prb-product {
+			grid-template-columns: 1fr 3fr;
+			.prb-title {
+				font-size: 1.1rem;
+			}
+			.prb-cta {
+				display: none;
+			}
+		}
+	}
+}

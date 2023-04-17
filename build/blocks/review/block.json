@@ -1,0 +1,78 @@
+{
+  "apiVersion": 2,
+  "name": "pscb/review",
+  "version": "0.1.0",
+  "title": "Products List",
+  "category": "pscb-blocks",
+  "description": "A list of products",
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "example": {
+    "attributes": {
+      "itemsOnVisible": 6,
+      "separatorColor": "#c6c6c6",
+      "subtitleColor": "#000000",
+      "titleColor": "#000000",
+      "readMoreBtnColor": "#000000",
+      "readMoreBtnHoverColor": "#f45900",
+      "ctaColor": "#ffffff",
+      "ctaBgColor": "#000000",
+      "ctaHoverColor": "#ffffff",
+      "ctaHoverBgColor": "#f45900"
+    }
+  },
+  "attributes": {
+    "id": {
+      "type": "string"
+    },
+    "blockStyles": {
+      "type": "object"
+    },
+    "itemsOnVisible": {
+      "type": "number",
+      "default": 6
+    },
+    "separatorColor": {
+      "type": "string",
+      "default": "#c6c6c6"
+    },
+    "subtitleColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "readMoreBtnColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "readMoreBtnHoverColor": {
+      "type": "string",
+      "default": "#f45900"
+    },
+    "ctaColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "ctaBgColor": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "ctaHoverColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "ctaHoverBgColor": {
+      "type": "string",
+      "default": "#f45900"
+    }
+  },
+  "textdomain": "product-showcase-blocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
